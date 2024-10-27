@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="clase 2/estilos.css">
+
+    <title>Bienvenida_ejercicio_2</title>
+</head>
+<body>
+    <h1>Bienvenida</h1>
+
+    <!-- placeholder es el texto en segundo plano que desaparece cuando
+     pulsas en el espacio para poder escrbiri -->
+    <input type="text" id="nombreInput" placeholder="Escribe aquí tu nombre">
+    <button onclick="mostrarNombre()">Mostrar nombre</button>
+
+    <p id="mensaje">Aquí aparecerá tu nombre</p>
+
+    <!-- Definimos la función
+     lo que va a hacer la funcion mostrarNombre -->
+    <script>
+        function mostrarNombre(){
+            // Recogemos en una variable el value del id del input "nombreInput"
+            var nombre = document.getElementById('nombreInput').value;
+
+            // Ahora printeo el valor de la variable
+            /*
+            Es decir, cogemos con el getElementById el id del parrafo y 
+            printeamos con innerHTML el contenido
+            (variable nombre + texto)
+            + se usa para concatenar
+            */
+            document.getElementById('mensaje').innerHTML = ' Hola ' + nombre + ', bienvenid@!';
+        }
+    </script>
+</body>
+</html>

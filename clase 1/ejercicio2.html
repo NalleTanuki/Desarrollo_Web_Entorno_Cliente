@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <title>Indicador de par o impar</title>
+
+    <script>
+        //Solicitar al usuario un numero
+        let numero = prompt("Introduce un número: ");
+
+        //Convertimos la variable a tipo numerico
+        numero = Number(numero);
+
+        //Comprobar si es par o impar con un bucle
+        //% para el resto de la division
+        //con === es la igualdad, igual a...
+        if(numero % 2 === 0){
+            //par
+            alert("El número " + numero + " es par");
+        }else{
+            //impar
+            alert("El número " + numero + " es impar");
+        }
+    </script>
+</body>
+</html>

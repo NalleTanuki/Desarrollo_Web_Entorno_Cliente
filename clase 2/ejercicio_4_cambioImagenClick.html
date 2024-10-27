@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de imágenes</title>
+
+    <link rel="stylesheet" href="clase 2/estilos_ejercicio4.css">
+</head>
+<body>
+    <h1>Cambio de imagen al clickar</h1>
+
+    <img id="imagenOriginal" onclick="cambiarImagen()" src="images/descarga.jfif" alt="imagen de una isla">
+    
+    <p>Haz click para cambiar la imagen</p>
+
+    <script>
+        function cambiarImagen(){
+            //creamos variable para recoger la imagen original
+            let image = document.getElementById('imagenOriginal');
+
+            // Si el src de la imagen es descarga.jfif igualamos image.src a la nueva imagen
+            //si está la nueva imagen, dejamos la original, o sea, igualamos image.src a la original
+            if(image.src.includes("descarga.jfif")){
+                // Entonces pon la otra
+                image.src = "images/descarga2.png"
+            }else{
+                image.src ="images/descarga.jfif";
+            }
+        }
+    </script>
+</body>
+</html>

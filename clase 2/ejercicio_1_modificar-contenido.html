@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contenido</title>
+</head>
+<body>
+    <h1>Modificando el contenido HTML</h1>
+
+    <!-- Ponemos un id al parrafo, para luego tratarlo en el js -->
+    <p id="prueba">Modificando el contenido</p>
+
+    <!-- Para hacer un boton, button o input -->
+    <!-- onclick es un evento para cuando hago clic
+    getElementById cogemos el id del parrafo y con
+    innerHTML añadimos el nuevo contenido  -->
+     <button type="button" onclick="document.getElementById('prueba').innerHTML='CONTENIDO CAMBIADO'">
+        Pulsa aquí
+     </button>
+</body>
+</html>

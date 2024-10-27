@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(240, 214, 179);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    width: 50%;
+    margin:auto;
+    border: 3px whitesmoke;
+    background-color: black;
+    color: white;
+}
