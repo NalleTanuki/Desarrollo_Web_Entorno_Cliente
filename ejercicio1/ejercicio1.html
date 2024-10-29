@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 1.	Elabora una web en la que se pida al usuario su nombre, apellidos y edad y
+     una vez le da al botón de enviar se muestre debajo la información completa -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+    <h1>Formulario de Información Personal</h1>
+    
+    <!-- Pedir DATOS -->
+    <p class="datos">Nombre:</p>
+    <input type="text" id="nombre" placeholder="Introduzca su nombre">
+
+    <p class="datos">Apellidos:</p>
+    <input type="text" id="apellidos" placeholder="Introduzca sus apellidos">
+
+    <p class="datos">Edad:</p>
+    <input type="number" id="edad" placeholder="Introduzca su edad">
+
+    <!-- BOTON ENVIAR -->
+    <button onclick="mostrarDatos()">Enviar</button>
+
+    <p id="mensaje"></p>
+
+    <script src="ejercicio1.js"></script>
+</body>
+</html>
