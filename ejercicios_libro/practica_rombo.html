@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio rombo con asteríscos</title>
+</head>
+<body>
+    <!-- Crear un rombo respetando los espacios y forma en lo posible.
+     Para solucionar el ejercicio, se ha dividido el rombo en 2 partes:
+        - parte superior en la que va creciendo el numero de asteriscos
+        - parte inferior en la que el numero de asteriscos es decreciente -->
+
+        <div id="caja"></div>
+
+        <script>
+            var caja = document.getElementById("caja");
+
+            var limite = 4; //Se registra el numero de filas que va a tener la parte creciente, la decreciente tiene una menos
+
+            //Creciente
+            for(var i = 0; i < limite; i++){
+                var asterisco = ""; //Se almacenan los asteriscos
+                var espacioHTML = ""; //Se almacenan los espacios HTML
+
+                for(var j = 0; j < limite -i -1; j++){
+                    espacioHTML += "&nbsp&nbsp";
+                }
+
+                for(var k = 1; k <= 2 * i + 1; k++){
+                    asterisco += "*";
+                }
+                caja.innerHTML = caja.innerHTML + espacioHTML + asterisco + "<br>";
+            }
+
+            //Decreciente
+            for(var i = limite - 2; i >= 0; i--){
+                var asterisco = "";
+                var espacioHTML = "";
+
+                for(var j = 0; j < limite -i -1; j++){
+                    espacioHTML += "&nbsp&nbsp";
+                }
+
+                for(var k = 1; k <= 2 * i + 1; k++){
+                    asterisco += "*";
+                }
+                caja.innerHTML = caja.innerHTML + espacioHTML + asterisco + "<br>";
+            }
+        </script>
+</body>
+</html>

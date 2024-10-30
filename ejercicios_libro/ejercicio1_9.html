@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1.9 - Recorrer un array</title>
+</head>
+<body>
+    <h1>Recorrido de un array</h1>
+
+    <p id="aqui"></p>
+
+    <script>
+        var txt = "";
+        var txt2 = "";
+        var dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
+
+        dias.forEach(muestra);
+        document.getElementById("aqui").innerHTML = txt;
+
+        function muestra(valor, index, array){
+            txt = txt + valor + " ";
+        }
+        document.getElementById("aqui").innerHTML += '<br>----------<br>';
+        
+        for(i = 0; i < dias.length; i++){
+            txt2 = txt2 + dias[i] + " ";
+        }
+
+        document.getElementById("aqui").innerHTML += txt2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1.8</title>
+</head>
+<body>
+    <p id="miTexto">texto a modificar</p>
+    <button id="miBoton">Dale fuerte!</button>
+
+    <script>
+        function dale(){
+            var x = document.getElementById("miTexto");
+            x.innerHTML = "hola";
+        }
+
+        document.getElementById("miBoton").addEventListener("click", dale, false);
+    </script>
+</body>
+</html>
