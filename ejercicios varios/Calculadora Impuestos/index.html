@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Crea una aplicacion que permita calcular el precio final de
+     un producto sumando el IVA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impuestos</title>
+
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Calculadora de Impuestos</h1>
+
+        <p clas="texto">Precio sin IVA (€):</p>
+        <input type="number" id="precioSinIVA" placeholder="Introduce el precio sin IVA">
+
+        <p class="texto">Procentaje de IVA (%):</p>
+        <input type="number" id="iva" placeholder="Introduce el IVA">
+
+        <button onclick="calcularPrecioFinal()">Calcular Precio Final</button>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

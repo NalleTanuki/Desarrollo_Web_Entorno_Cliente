@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Crea una web donde el usuario pueda seleccionar una fruta de una
+     lista desplegable y mostrar informacion como:
+     nombre
+     una breve descripcion
+     una imagen de la fruta seleccionada -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Frutas</title>
+
+    <link rel="stylesheet" href="css/frutas.css">
+</head>
+<body>
+    <h1>Elige tu Fruta Favorita</h1>
+
+    <select id="fruta" onchange="mostrarFruta()">
+        <option value="" disabled selected>Selecciona una fruta</option>
+        <option value="manzana">Manzana</option>
+        <option value="platano">Plátano</option>
+        <option value="fresa">Fresa</option>
+    </select>
+
+    <div id="infoFruta"></div>
+
+    <script src="js/frutas.js"></script>
+</body>
+</html>
